@@ -1,0 +1,89 @@
+.nav__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.767);
+  font-weight: bold;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.toggler {
+  display: none;
+}
+.nav__left > p {
+  font-size: 2.5rem;
+  margin: 5px;
+  margin-left: 2rem;
+}
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+.nav__right > a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+.active {
+  color: blueviolet !important;
+}
+.nav__right > a:hover {
+  color: blueviolet;
+}
+.spacing {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 674px) {
+  .toggler {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+}
+@media only screen and (max-width: 1122px) {
+  .nav__box {
+    display: block;
+  }
+  .nav__right {
+    display: none;
+  }
+  .nav__right > a {
+    font-size: 2rem;
+    margin: 5px;
+  }
+  .spacing {
+    margin-top: 5rem;
+  }
+  .toggler {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .toggler > i {
+    cursor: pointer;
+    color: white;
+  }
+  .activate {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: UpDown ease-in-out 1s;
+  }
+}
+@keyframes UpDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

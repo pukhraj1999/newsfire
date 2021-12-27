@@ -1,0 +1,33 @@
+.pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pages > button,
+h4 {
+  margin-left: 5px;
+}
+.search__box {
+  display: flex;
+  justify-content: flex-end;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 5px;
+  margin-bottom: -20px;
+  width: 310px;
+  background-color: white;
+  box-shadow: 0px 0px 2px black;
+}
+.search > input {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+.search > i {
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
